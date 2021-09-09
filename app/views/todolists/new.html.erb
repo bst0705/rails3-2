@@ -2,7 +2,7 @@
 <h1>新規投稿</h1>
 <!-- form_with部分 -->
 <% if @list.errors.any? %>
-  <%= @list.errors.count %>件のエラーが発生しました
+  <%= @list.errors.count %>件のエラーが発生しました。%>
   <% @list.errors.full_messages.each do |message| %>
     <%= message %>
   <% end %>
